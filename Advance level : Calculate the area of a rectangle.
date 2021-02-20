@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+       
+       // Advance level 
+      
+      float length , breadth ;
+      printf("Enter the value of length of rectangle \n");
+      scanf("%f" , &length );
+      printf("Enter the value of breadth of rectangle \n");
+      scanf("%f" , &breadth );
+      if (length==breadth)
+      {
+            printf("Sorry , This is a square");
+            printf(" and its area is %f " , length*breadth );
+      }
+      else
+      {
+           float Area = length*breadth ;
+            printf("The area of your rectangle is %f" , Area );
+      }
+      
+      return 0 ;      
+}  
