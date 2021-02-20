@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+ int main(){
+       // BASIC LEVEL 
+       // calculate the area of rectangle using user input.
+       
+       int l , b ;
+       printf("What is  length of the rectangle ? \n");
+       scanf("%d" , &l);
+       printf("What is breadth of rectangle ? \n");
+       scanf("%d" , &b);
+       printf("The area of rectangle is %d. \n" , l*b);
+       return 0 ;
+}
