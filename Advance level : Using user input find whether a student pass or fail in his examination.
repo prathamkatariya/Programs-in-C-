@@ -1,0 +1,27 @@
+#include <stdio.h> 
+
+int main(){
+    
+    // BY using the user input find whether a student is pass or fail in his examination .
+    // Condition he must get 33% in all the three main subjects and also get a total of 40% then only he passes the examination .
+    
+    float sub1 ,sub2 ,sub3 ;
+    printf("Enter your marks of subject 1 out of 100 \n");
+    scanf("%f" , &sub1);
+    printf("Enter your marks of subject 2 out of 100 \n");
+    scanf("%f" , &sub2);
+    printf("Enter your marks of subject 3 out of 100 \n");
+    scanf("%f" , &sub3);
+    float Total_percent = (sub1+sub2+sub3)/300*100 ;
+    if ( Total_percent >= 40 && sub1 >= 33 && sub2 >= 33 && sub3 >= 33  )
+    {
+       printf("You get %f percent \n" , Total_percent );
+        printf("You passed the examination ");
+    }
+    else
+    {
+        printf("you get %f persent \n" , Total_percent );
+        printf("Sorry , you are fail try next time \nGood Luck ");
+    }
+    return 0;
+}
