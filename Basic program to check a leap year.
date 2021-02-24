@@ -1,0 +1,21 @@
+#include <stdio.h> 
+
+int main(){
+
+    // I this program we gonna to tell you that the year entered by you is a leap year or not.
+
+    int year ;
+    printf("Enter a year which you like \nwe gona to tell you whether it is a leap year or not \n");
+    scanf("%d" , &year );
+    int leap_year = year%4 ;
+    if ( leap_year == 0 )
+    {
+        printf("Year you entered is a leap year. ");
+    }
+    else
+    {
+        printf("Year you entered is not a leap year.");
+    }
+    
+    return 0;
+}
