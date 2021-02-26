@@ -1,0 +1,24 @@
+#include <stdio.h> 
+
+int main(){
+    
+    /* In this program you have to enter a character and we gonna show you whether the number entered by you is a lower
+       or upper case. 
+    */
+    // 97 - 122 = a-z 
+
+    char a   ;
+    printf("Enter the character of your choice \n");
+    scanf("%c" , & a );
+    if (a >= 97 && a <=122 )
+    {
+        printf("The character you entered is a lower case ");
+    }
+    else
+    {
+        printf("The character you etered is not a lower case ");
+    }
+    
+
+    return 0;
+}
