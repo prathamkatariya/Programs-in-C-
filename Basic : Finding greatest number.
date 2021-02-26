@@ -1,0 +1,35 @@
+#include <stdio.h> 
+
+int main(){
+
+    // Finding greatest number amoung 4 numbers.
+
+    int num1 , num2 , num3 , num4 ;
+    printf("Enter the 1st number ");
+    scanf("%d" , & num1 );
+    printf("Enter the 2nd number ");
+    scanf("%d" , & num2 );
+    printf("Enter the 3rd number ");
+    scanf("%d" , & num3 );
+    printf("Enter the 4st number ");
+    scanf("%d" , & num4 );
+
+    if (num1 > num2 && num1 > num3 && num1 > num4 )
+    {
+        printf("The greatest number is %d that you entered among all " , num1 );
+    }
+    else if (num2 > num1 && num2 > num3 && num2 > num4 )
+    {
+        printf("The greatest number is %d that you entered among all" , num2 );
+    }
+    else if (num3 > num1 && num3 > num2 && num3 > num4 )
+    {
+        printf("The greatest number is %d that you entered among all " , num3 );
+    }
+    else
+    {
+        printf("The greatest number is %d that you entered among all " , num4);
+    }
+    
+    return 0 ;
+}
