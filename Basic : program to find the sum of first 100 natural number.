@@ -1,0 +1,13 @@
+#include <stdio.h> 
+
+int main(){
+    // To find the sum of first 100 natural numbers.
+    int n ,a ,d ;
+    n = 100 ;
+    d = 1 ;
+    a = 1 ;
+    int sum = n*(2*a + (n-1)*d )/2 ;
+    printf("The sum of first 100 natural number is %d ", sum );
+
+    return 0;
+}
