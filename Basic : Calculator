@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    // A program For calculator designing using switch/case loop.
+    float num1 , num2 ;
+    printf("Enter the first number ");
+    scanf("%f", &num1);
+    char operator ;
+    printf("Enter the operator ");
+    scanf(" %c", &operator);
+    printf("Enter the second number ");
+    scanf("%f", &num2);
+    float a = num1+num2 ;
+    float b = num1-num2 ;
+    float c = num1*num2 ;
+    float d = num1/num2 ;
+    switch ( operator )
+    {
+    case '+' :
+        printf("Your answer is %f" , a );
+        break;
+    case '-' : 
+        printf("Your answer is %f" , b );
+        break;
+    case '*' : 
+        printf("Your answer is %f" , c );
+        break;
+    case '/' : 
+        printf("Your answer is %f" , d );
+        break;            
+    
+    default:
+        printf("You enter invalid operator ");
+        break;
+    }
+    return 0;
+}
