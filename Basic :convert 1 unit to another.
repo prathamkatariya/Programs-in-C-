@@ -1,0 +1,19 @@
+#include <stdio.h> 
+
+int main(){
+
+    // This is a simple progrm which convert kilometer in other units.
+
+    float distance ; 
+    printf("Enter the distance between two cities in kilometers  ");
+    scanf("%f" , &distance );
+    float metre = distance*1000 ; 
+    printf("Your distance in metre is %f \n" , metre);
+    float foot  = metre*3.281 ;
+    printf("Your distance in foot is %f \n", foot );
+    float inches = metre*39.37 ;
+    printf("Your distance in inches is %f \n" , inches );
+    float centimetre = metre*100 ;
+    printf("Your distance in centimetre is %f \n", centimetre );
+    return 0;
+}
