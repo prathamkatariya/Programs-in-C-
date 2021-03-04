@@ -1,0 +1,13 @@
+#include <stdio.h> 
+
+int main(){
+    // To print multiple values of two accepted number.
+    int a ,b ;
+    printf("Enter the value of first number \n");
+    scanf("%d" , & a );
+    printf("Enter the value of second number \n");
+    scanf("%d" , & b );
+    int c = a*b ;
+    printf("Multiple of number is %d " , c );
+    return 0;
+}
