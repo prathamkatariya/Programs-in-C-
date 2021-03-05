@@ -1,0 +1,19 @@
+#include <stdio.h> 
+#include <math.h>
+
+    // Finding area of triangle 
+
+int main(){ 
+    float side1  ,side2 , side3 ;
+    printf("Enter the first side of triangle \n");
+    scanf("%f" , &side1);
+    printf("Enter the second side of triangle \n");
+    scanf("%f" , &side2);
+    printf("Enter the third side of triangle \n");
+    scanf("%f" , &side3);
+    float s = (side1+side2+side3)/2 ;
+    float a = (s*(s-side1)*(s-side2)*(s-side3));
+    float area = sqrt(a);
+    printf("The area of triangle is %f " , area );
+    return 0;
+}
