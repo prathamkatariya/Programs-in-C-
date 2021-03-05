@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+
+    // You have to enter only three numbres and we gonna tell you which is greatest among them.
+
+    float n1, n2, n3;
+    printf("Enter the first numbers: ");
+    scanf("%f", &n1);
+    printf("Enter the second numbers: ");
+    scanf("%f", &n2);
+    printf("Enter the third numbers: ");
+    scanf("%f", &n3);
+    // if n1 is greater than both n2 and n3, n1 is the largest
+    if (n1 >= n2 && n1 >= n3)
+        printf("%f is the largest number.", n1);
+
+    // if n2 is greater than both n1 and n3, n2 is the largest
+    if (n2 >= n1 && n2 >= n3)
+        printf("%f is the largest number.", n2);
+
+    // if n3 is greater than both n1 and n2, n3 is the largest
+    if (n3 >= n1 && n3 >= n2)
+        printf("%f is the largest number.", n3);
+
+    return 0;
+}
