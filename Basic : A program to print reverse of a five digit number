@@ -1,0 +1,20 @@
+#include <stdio.h> 
+
+int main(){
+
+    // A simple program in which reverse of five digit number is printed.
+
+    int num ;
+    printf("Enter your five digit number \n");
+    scanf("%d" , &num );
+    int once = num%10 ;
+    int a = (num-once)/10 ;
+    int tens = a%10 ;
+    int b = (a-tens)/10 ;
+    int hundred = b%10 ;
+    int c = (b-hundred)/10 ;
+    int thousand = c%10 ;
+    int ten_thousand = (c-thousand)/10 ;
+    printf("The reverse of given number is %d%d%d%d%d " , once , tens , hundred , thousand , ten_thousand );
+    return 0;
+}
