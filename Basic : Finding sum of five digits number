@@ -1,0 +1,21 @@
+#include <stdio.h> 
+
+int main(){
+
+    // A basic program to find the sum of a five digit number.
+
+    int num ;
+    printf("Enter your five digit number \n");
+    scanf("%d" , &num );
+    int once = num%10 ;
+    int a = (num-once)/10 ;
+    int tens = a%10 ;
+    int b = (a-tens)/10 ;
+    int hundred = b%10 ;
+    int c = (b-hundred)/10 ;
+    int thousand = c%10 ;
+    int ten_thousand = (c-thousand)/10 ;
+    int sum = once+tens+hundred+thousand+ten_thousand ;
+    printf("The sum of your five digit no. is %d" , sum);
+    return 0;
+}
