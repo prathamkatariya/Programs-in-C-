@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+
+    // Calculating percentage 
+
+    float english, maths, physics, chemistry, hindi;
+    printf("Enter your marks of english\n ");
+    scanf("%f", &english);
+    printf("Enter your marks of maths\n ");
+    scanf("%f", &maths);
+    printf("Enter your marks of physics\n ");
+    scanf("%f", &physics);
+    printf("Enter your marks of chemistry\n ");
+    scanf("%f", &chemistry);
+    printf("Enter your marks of hindi\n ");
+    scanf("%f", &hindi);
+    float total = english+maths+physics+chemistry+hindi;
+    printf("Your total marks are %f\n", total);
+    float percent = total/500*100;
+    printf("Your percentage are %f ", percent);
+
+    return 0;
+}
