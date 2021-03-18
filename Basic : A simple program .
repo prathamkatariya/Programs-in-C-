@@ -1,0 +1,43 @@
+#include <stdio.h> 
+
+int main(){
+    
+    /* Consider a currency system in which there are notes of seven domination namely rupees 1,2,5,10,20,50,100 . 
+       If a sum of rupees N is entered through the keyboard write a program to compute the smallest number 
+       of notes that will combine to give rupees N .
+    */
+
+    int rupees ;
+
+    printf("Enter the amount you want : ");
+    scanf("%d" , & rupees);
+
+    int N1 = rupees/100 ;
+    printf("You get %d note of hundered rupees, \n" , N1);
+
+    int n1 = rupees%100 ;
+    int N2 = n1/50 ;
+    printf("%d note of fifty rupees, \n", N2);
+
+    int n2 = n1 - (N2*50);
+    int N3 = n2/20 ;
+    printf("%d note of twenty rupees, \n" , N3 ); 
+
+    int n3 = n2 - (N3*20);
+    int N4 = n3/10 ;
+    printf("%d note of ten rupees, \n" , N4 );
+
+    int n4 = n3 - (N4*10);
+    int N5 = n4/5 ;
+    printf("%d note of five rupees, \n" , N5 );
+
+    int n5 = n4 - (N5*5);
+    int N6 = n5/2 ;
+    printf("%d note of two rupees and \n" , N6 );
+
+    int n6 = n5 - (N6*2);
+    int N7 = n6/1 ;
+    printf("%d note of one rupees \n" , N7 );
+
+    return 0;
+}
