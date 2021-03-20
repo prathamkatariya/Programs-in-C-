@@ -1,0 +1,49 @@
+#include <stdio.h> 
+
+int main(){
+    
+
+    /* According to the Gregorian calendar , it was monday on the date 01/01/01 . if any year is input 
+       through the keyboard . Write a program to find out what is the day on the 01/01 of this year . 
+    */
+
+    int year ;
+
+    printf("Enter a year of your choice ");
+    scanf("%d" , & year);
+
+    int N1 = (year-1)/4 ;
+    int days_1 = N1*366 ;
+    int N2 = (year-1) - N1 ;
+    int days_2 = N2*365 ;
+    int total_days = days_1 + days_2 + 1;
+    int That_day = total_days % 7 ;
+    
+    switch (That_day)
+    {
+    case 1 :
+        printf("Day at 01/01/%d  is Monday " , year );
+        break;
+    case 2 : 
+        printf("Day at 01/01/%d  is Tuesday " , year );
+        break;
+    case 3 : 
+        printf("Day at 01/01/%d  is Wednesday " , year );   
+        break;
+    case 4 : 
+        printf("Day at 01/01/%d  is Thrusday " , year );   
+        break;   
+    case 5 : 
+        printf("Day at 01/01/%d  is friday " , year );   
+        break;    
+    case 6 : 
+        printf("Day at 01/01/%d  is Saturday " , year );   
+        break;          
+    case 0 : 
+        printf("Day at 01/01/%d  is Sunday  " , year );   
+        break;
+    }
+
+
+    return 0;
+}
