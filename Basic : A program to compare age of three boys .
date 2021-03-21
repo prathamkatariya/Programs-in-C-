@@ -1,0 +1,37 @@
+#include <stdio.h> 
+
+int main(){
+
+    /* If the age of Ram , Shyam and Ajay are the input from the keyboard , Write a program to determine the 
+    youngest of three.
+    */
+
+    int age1 , age2 , age3 ;
+
+    printf("Enter the age of Ram : ");
+    scanf("%d" , & age1 );
+
+    printf("Enter the age of Shyam : ");
+    scanf("%d" , & age2 );
+    
+    printf("Enter the age of Ajay : ");
+    scanf("%d" , & age3 );
+
+    if (age1 < age2 && age1 < age3 )
+    {
+        printf("Youngest among all three is Ram with age = %d " , age1 );
+    }
+    else
+    {
+    if (age2 < age1 && age2 < age3)
+    {
+        printf("Youngest among all three is Shyam with age = %d " , age2 );
+    }
+    
+    else
+    {
+        printf("Youngest among all three is Ajay with age = %d " , age3 );
+    }
+    }
+    return 0;
+}
