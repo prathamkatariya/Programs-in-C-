@@ -1,0 +1,30 @@
+#include <stdio.h> 
+
+int main(){
+    
+    /* Write a program to check whether a triangle is valid or not , when the three angle of a triangle is entered 
+    through the keyboard . A triangle is valid if the sum of it's all angle is 180 degrees . */
+
+   int A1 ,A2, A3 ;
+
+   printf("Enter the three angle of triangl Angle 1 : " );
+   scanf("%d" , & A1 );
+   printf("Angle 2 : ");
+   scanf("%d" , & A2 );
+   printf("Angle 3 : ");
+   scanf("%d" , & A3 );
+
+   int sum = A1+A2+A3 ;
+
+   if (sum==180)
+   {
+       printf("According to the angle give by you triangle is valid ");
+   }
+   else
+   {
+       printf("Triangle is not valid ");
+   }
+    
+    return 0 ; 
+
+}
