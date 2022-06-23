@@ -4,21 +4,23 @@ int main(){
        
        // Advance level 
       
-      float length , breadth ;
+      float length , breadth ;                                                      // Taking length and breadth as input.
       printf("Enter the value of length of rectangle \n");
       scanf("%f" , &length );
       printf("Enter the value of breadth of rectangle \n");
       scanf("%f" , &breadth );
       if (length==breadth)
-      {
+      {                                                                            // Checking It is a rectangle or not.
             printf("Sorry , This is a square");
             printf(" and its area is %f " , length*breadth );
       }
       else
       {
-           float Area = length*breadth ;
+           float Area = length*breadth ;                                            // Calculating the area of rectangle.
             printf("The area of your rectangle is %f" , Area );
       }
       
       return 0 ;      
 }  
+
+// Time Complexity : O(1)
