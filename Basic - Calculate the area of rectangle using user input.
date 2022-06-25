@@ -5,10 +5,10 @@
        // calculate the area of rectangle using user input.
        
        int l , b ;
-       printf("What is  length of the rectangle ? \n");
+       printf("What is  length of the rectangle ? \n");     //Taking length as input.
        scanf("%d" , &l);
-       printf("What is breadth of rectangle ? \n");
+       printf("What is breadth of rectangle ? \n");         // Taking breadth as input.
        scanf("%d" , &b);
-       printf("The area of rectangle is %d. \n" , l*b);
+       printf("The area of rectangle is %d. \n" , l*b);    // Output the area of rectangle.
        return 0 ;
 }
